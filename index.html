@@ -3,29 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>K-Means Visualizer</title>
+  <title>K-Means Clustering Visualizer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>K-Means Clustering Visualizer</h1>
+    <h1>K-Means Clustering Simulator</h1>
   </header>
 
-  <main class="container">
-    <section class="sidebar">
+  <main class="layout">
+    <aside class="controls">
+      <h2>Controls</h2>
       <label for="clusters">Number of Clusters (K):</label>
       <input type="number" id="clusters" min="1" max="10" value="3" />
       <button id="startBtn">Start Clustering</button>
       <button id="resetBtn">Reset</button>
-    </section>
+      <p class="hint">Click on canvas to add points</p>
+    </aside>
 
-    <section class="visualizer">
-      <canvas id="canvas" width="600" height="400"></canvas>
+    <section class="canvas-area">
+      <canvas id="canvas" width="700" height="500"></canvas>
     </section>
   </main>
 
   <footer>
-    <p>Made by Soham Gangurde | GitHub Pages Deployed</p>
+    <p>© Soham Gangurde | GitHub Pages Deployment</p>
   </footer>
 
   <script src="script.js"></script>
