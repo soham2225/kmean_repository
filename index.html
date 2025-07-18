@@ -1,38 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>K-Means Visualizer</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="container">
-    <h1>K-Means Clustering Simulator</h1>
-    <section class="description">
-      <p>
-        Visualize how K-Means clustering groups data into clusters by selecting the number of clusters (K) and clicking Start. You can click anywhere on the canvas to add data points.
-      </p>
-    </section>
+  <header>
+    <h1>K-Means Clustering Visualizer</h1>
+  </header>
 
-    <section class="controls">
-      <label for="kValue">Number of Clusters (K):</label>
-      <select id="kValue">
-        <option value="2">2</option>
-        <option value="3" selected>3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
+  <main class="container">
+    <section class="sidebar">
+      <label for="clusters">Number of Clusters (K):</label>
+      <input type="number" id="clusters" min="1" max="10" value="3" />
       <button id="startBtn">Start Clustering</button>
       <button id="resetBtn">Reset</button>
     </section>
 
-    <canvas id="kmeansCanvas"></canvas>
-  </div>
+    <section class="visualizer">
+      <canvas id="canvas" width="600" height="400"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by Soham Gangurde | GitHub Pages Deployed</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
