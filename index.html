@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K-Means Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>K-Means Clustering Simulator</h1>
+    <section class="description">
+      <p>
+        Visualize how K-Means clustering groups data into clusters by selecting the number of clusters (K) and clicking Start. You can click anywhere on the canvas to add data points.
+      </p>
+    </section>
+
+    <section class="controls">
+      <label for="kValue">Number of Clusters (K):</label>
+      <select id="kValue">
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <button id="startBtn">Start Clustering</button>
+      <button id="resetBtn">Reset</button>
+    </section>
+
+    <canvas id="kmeansCanvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
